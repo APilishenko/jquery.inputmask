@@ -372,7 +372,7 @@
                 }
             }
             var maskTokens = getMaskSet().maskToken, testPos = ndxIntlzr ? tstPs : 0, ndxInitializer = ndxIntlzr || [ 0 ], matches = [], insertStop = !1;
-            if (cacheable === !0 && getMaskSet().tests[pos]) return getMaskSet().tests[pos];
+            if (getMaskSet().tests[pos]) return getMaskSet().tests[pos];
             if (void 0 == ndxIntlzr) {
                 for (var test, previousPos = pos - 1; void 0 == (test = getMaskSet().validPositions[previousPos]) && previousPos > -1 && (!getMaskSet().tests[previousPos] || void 0 == (test = getMaskSet().tests[previousPos][0])); ) previousPos--;
                 void 0 != test && previousPos > -1 && (testPos = previousPos, ndxInitializer = test.locator.slice());
